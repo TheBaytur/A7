@@ -73,7 +73,22 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            />
+            android:layout_marginHorizontal="20dp"
+            android:text="MAIN"
+            android:backgroundTint="@color/purple"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CONTACTS"
+            android:backgroundTint="@color/purple"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:text="BLOG"
+            android:backgroundTint="@color/purple"/>
 
     </LinearLayout>
 
