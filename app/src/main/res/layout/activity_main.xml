@@ -36,6 +36,7 @@
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/main_box"
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:layout_below="@id/upper_bg"
@@ -53,6 +54,23 @@
 
         </RelativeLayout>
 
+    <ImageView
+        android:id="@+id/main_image"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/main_box"
+        android:layout_marginHorizontal="50dp"
+        app:srcCompat="@drawable/knight" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#046BEE"
+        android:orientation="horizontal">
+
+    </LinearLayout>
 
 
 </RelativeLayout>
