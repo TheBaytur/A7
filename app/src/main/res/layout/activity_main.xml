@@ -55,15 +55,52 @@
         </RelativeLayout>
 
     <EditText
-        android:id="@+id/editTextText"
-        android:layout_width="wrap_content"
+        android:id="@+id/user_name_field"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="224dp"
+        android:layout_below="@id/main_box"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="20dp"
+        android:minHeight="48dp"
+        android:hint="Type name"
         android:ems="10"
         android:inputType="text"
-        android:text="Name" />
+        />
+
+    <EditText
+        android:id="@+id/user_bio_field"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/user_name_field"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Type biography"
+        android:inputType="textMultiLine"
+        android:minHeight="48dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_bio_field"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginStart="50dp"
+        android:backgroundTint="@color/purple"
+        android:onClick="saveData"
+        android:text="SAVE" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_bio_field"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="@color/purple"
+        android:onClick="getData"
+        android:text="LOAD" />
 
     <LinearLayout
         android:layout_width="match_parent"
